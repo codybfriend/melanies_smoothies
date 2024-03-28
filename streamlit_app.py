@@ -22,7 +22,7 @@ session = cnx.session()
 # Create variable and pull data from Fruit Options
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'))
 st.dataframe(data=my_dataframe, use_container_width=True)
-st.stop()
+#st.stop()
 
 # Create multi select with data from Fruit Options
 ingredients_list = st.multiselect(
